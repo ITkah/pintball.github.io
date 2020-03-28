@@ -1,0 +1,25 @@
+.title-xl {
+    text-transform: uppercase;
+    color: #FFF;
+    font: 900 2.5rem 'Open Sans', sans-serif;
+    line-height: 123.9%;
+    margin-bottom: 10px;
+    @media (max-width: 990px) {
+        font-size: 2rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 1.4rem;
+    }
+}
+
+.text-simple {
+    color: #FFF;
+    font: normal 1.125rem 'Open Sans', sans-serif;
+    line-height: 119.9%;
+    @media (max-width: 990px) {
+        font-size: 1rem;
+    }
+    @media (max-width: 576px) {
+        font-size: .95rem;
+    }
+}

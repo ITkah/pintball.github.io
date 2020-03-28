@@ -1,0 +1,55 @@
+.btn-gold {
+    background: #FFFF00;
+    border-radius: 5px;
+    color: #373810;
+    font: normal 1.125rem 'Open Sans', sans-serif;
+    padding: 10px 30px;
+    border: 1px solid #FFFF00;
+    width: 180px;
+    display: block;
+    transition: .3s;
+    &:hover {
+        box-shadow: 0px 0px 25px 0px rgba(255, 255, 0, 0.75);
+    }
+    @media (max-width: 576px) {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.btn-transparent {
+    background: transparent;
+    border: 1px solid #FFFF00;
+    border-radius: 5px;
+    color: #fff;
+    font: normal 1.125rem 'Open Sans', sans-serif;
+    padding: 10px 30px;
+    width: 180px;
+    display: block;
+    transition: .3s;
+    &:hover {
+        background: #FFFF00;
+        color: #000;
+    }
+    @media (max-width: 576px) {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+.btn-wraper {
+    display: flex;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    a {
+        text-align: center;
+        margin-right: 10px;
+        @media (max-width: 768px) {
+            margin: 0 0 10px 0;
+        }
+    }
+}
