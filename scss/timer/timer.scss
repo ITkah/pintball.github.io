@@ -1,0 +1,122 @@
+.timer {
+    background: url(../img/timer/timer.png) no-repeat center center;
+    background-size: cover;
+    .container {
+        padding: 90px 0;
+        @media (max-width: 990px) {
+            padding: 50px 0;
+        }
+    }
+    .timer-container {
+        max-width: 500px;
+        .text-simple {
+            line-height: 126.9%;
+            margin-bottom: 35px;
+        }
+    }
+    br {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .timer-text {
+        margin-bottom: 20px;
+        color: #FFFF00;
+        font: bold 1.125rem 'Open Sans', sans-serif;
+    }
+}
+
+.timer-box-wrap {
+    margin-bottom: 60px;
+    display: block;
+    @media (max-width: 990px) {
+        margin-bottom: 30px;
+    }
+    .countdownHolder {
+        display: flex;
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+            display: grid;
+            grid-gap: 20px;
+            justify-items: center;
+        }
+    }
+    .digit {
+        background: rgba(255,255,255,.3);
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        color: #FFF;
+        font: bold 2rem 'Open Sans', sans-serif;
+        position: relative;
+    }
+    .countDays, .countHours, .countMinutes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 8px;
+        margin-right: 20px;
+        position: relative;
+        @media (max-width: 576px) {
+            grid-template-columns: 60px 60px;
+        }
+    }
+    .countDays {
+        &::after {
+            content: ':';
+            color: #FFF;
+            font: normal 3rem 'Open Sans', sans-serif;
+            position: absolute;
+            bottom: 0px;
+            right:-16px;
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+        &::before {
+            content: 'дней';
+            color: #FFF;
+            font: normal 1rem 'Open Sans', sans-serif;
+            position: absolute;
+            bottom: -25px;
+            left: 45px;
+        }
+    }
+    .countHours {
+        &::after {
+            content: ':';
+            color: #FFF;
+            font: normal 3rem 'Open Sans', sans-serif;
+            position: absolute;
+            bottom: 0px;
+            right:-16px;
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+        &::before {
+            content: 'часов';
+            color: #FFF;
+            font: normal 1rem 'Open Sans', sans-serif;
+            position: absolute;
+            bottom: -25px;
+            left: 40px;
+        }
+    }
+    .countMinutes {
+        &::before {
+            content: 'минут';
+            color: #FFF;
+            font: normal 1rem 'Open Sans', sans-serif;
+            position: absolute;
+            bottom: -25px;
+            left: 40px;
+        }
+    }
+}
+
+.countSeconds {
+    display: none;
+}

@@ -34,7 +34,7 @@
                 width: 350px;
                 height: 120%;
                 right: -25px;
-                top: -20px;
+                top: -2px;
                 z-index: 1;
                 @media(max-width: 990px) {
                     display: none;
@@ -46,6 +46,11 @@
             height: auto;
             position: relative;
             z-index: 2;
+            top: 25px;
+            border-radius: 5px;
+            @media (max-width: 990px) {
+                top: 0;
+            }
         }
     }
 }

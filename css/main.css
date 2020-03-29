@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background: #373810;
   -webkit-box-shadow: 8px 8px 15px rgba(55, 56, 16, 0.3);
@@ -301,7 +302,7 @@ header {
         width: 350px;
         height: 120%;
         right: -25px;
-        top: -20px;
+        top: -2px;
         z-index: 1; }
         @media (max-width: 990px) {
           .about .about-container .about-box-img::before {
@@ -310,7 +311,287 @@ header {
       max-width: 100%;
       height: auto;
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      top: 25px;
+      border-radius: 5px; }
+      @media (max-width: 990px) {
+        .about .about-container img {
+          top: 0; } }
+
+.advanture {
+  background: url(../img/advature/advanture-bg.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 2; }
+  .advanture .container {
+    padding: 90px 0; }
+    @media (max-width: 990px) {
+      .advanture .container {
+        padding: 50px 0; } }
+  .advanture .title-sm {
+    text-align: center;
+    display: block;
+    margin-bottom: 65px; }
+    @media (max-width: 990px) {
+      .advanture .title-sm {
+        margin-bottom: 30px; } }
+
+.advanture-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px; }
+  @media (max-width: 990px) {
+    .advanture-container {
+      grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 768px) {
+    .advanture-container {
+      grid-template-columns: 1fr;
+      text-align: center; } }
+  .advanture-container p {
+    line-height: 145.4%; }
+  .advanture-container img {
+    margin-bottom: 15px; }
+
+.timer {
+  background: url(../img/timer/timer.png) no-repeat center center;
+  background-size: cover; }
+  .timer .container {
+    padding: 90px 0; }
+    @media (max-width: 990px) {
+      .timer .container {
+        padding: 50px 0; } }
+  .timer .timer-container {
+    max-width: 500px; }
+    .timer .timer-container .text-simple {
+      line-height: 126.9%;
+      margin-bottom: 35px; }
+  @media (max-width: 990px) {
+    .timer br {
+      display: none; } }
+  .timer .timer-text {
+    margin-bottom: 20px;
+    color: #FFFF00;
+    font: bold 1.125rem 'Open Sans', sans-serif; }
+
+.timer-box-wrap {
+  margin-bottom: 60px;
+  display: block; }
+  @media (max-width: 990px) {
+    .timer-box-wrap {
+      margin-bottom: 30px; } }
+  .timer-box-wrap .countdownHolder {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    @media (max-width: 576px) {
+      .timer-box-wrap .countdownHolder {
+        grid-template-columns: 1fr;
+        display: grid;
+        grid-gap: 20px;
+        justify-items: center; } }
+  .timer-box-wrap .digit {
+    background: rgba(255, 255, 255, 0.3);
+    height: 60px;
+    width: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 5px;
+    color: #FFF;
+    font: bold 2rem 'Open Sans', sans-serif;
+    position: relative; }
+  .timer-box-wrap .countDays, .timer-box-wrap .countHours, .timer-box-wrap .countMinutes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+    margin-right: 20px;
+    position: relative; }
+    @media (max-width: 576px) {
+      .timer-box-wrap .countDays, .timer-box-wrap .countHours, .timer-box-wrap .countMinutes {
+        grid-template-columns: 60px 60px; } }
+  .timer-box-wrap .countDays::after {
+    content: ':';
+    color: #FFF;
+    font: normal 3rem 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 0px;
+    right: -16px; }
+    @media (max-width: 576px) {
+      .timer-box-wrap .countDays::after {
+        display: none; } }
+  .timer-box-wrap .countDays::before {
+    content: 'дней';
+    color: #FFF;
+    font: normal 1rem 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: -25px;
+    left: 45px; }
+  .timer-box-wrap .countHours::after {
+    content: ':';
+    color: #FFF;
+    font: normal 3rem 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 0px;
+    right: -16px; }
+    @media (max-width: 576px) {
+      .timer-box-wrap .countHours::after {
+        display: none; } }
+  .timer-box-wrap .countHours::before {
+    content: 'часов';
+    color: #FFF;
+    font: normal 1rem 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: -25px;
+    left: 40px; }
+  .timer-box-wrap .countMinutes::before {
+    content: 'минут';
+    color: #FFF;
+    font: normal 1rem 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: -25px;
+    left: 40px; }
+
+.countSeconds {
+  display: none; }
+
+.map {
+  margin-bottom: -5px;
+  position: relative; }
+  @media (max-width: 576px) {
+    .map {
+      margin: 0; } }
+  .map iframe {
+    height: 650px;
+    width: 100%; }
+    @media (max-width: 576px) {
+      .map iframe {
+        height: 300px; } }
+
+.form-map {
+  position: absolute;
+  top: 140px; }
+  @media (max-width: 576px) {
+    .form-map {
+      position: relative;
+      top: 0; } }
+
+.form {
+  background: #fff;
+  max-width: 350px;
+  border-radius: 5px;
+  padding: 20px;
+  /*Outer box of the fake checkbox*/
+  /*Checkmark of the fake checkbox*/
+  /*Hide the checkmark by default*/
+  /*Unhide on the checked state*/ }
+  @media (max-width: 990px) {
+    .form {
+      padding: 15px; } }
+  @media (max-width: 576px) {
+    .form {
+      margin: 0 auto;
+      max-width: 100%;
+      margin-bottom: 15px; } }
+  .form .title-sm {
+    font-size: 1.5rem;
+    margin-bottom: 5px; }
+    @media (max-width: 990px) {
+      .form .title-sm {
+        font-size: 1.2rem; } }
+  .form .text-simple {
+    font-size: 1rem;
+    margin-bottom: 15px; }
+    @media (max-width: 990px) {
+      .form .text-simple {
+        font-size: .9rem; } }
+  .form p {
+    color: #000;
+    text-align: center; }
+  .form .simple-input {
+    display: block;
+    border: 1px solid #C5C5C5;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px 20px;
+    width: 320px;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+    @media (max-width: 990px) {
+      .form .simple-input {
+        width: 100%; } }
+  .form button {
+    width: 320px;
+    margin: 0 auto;
+    color: #000;
+    cursor: pointer;
+    margin-bottom: 15px; }
+    @media (max-width: 990px) {
+      .form button {
+        width: 100%; } }
+  .form .check {
+    position: absolute; }
+  .form label {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    color: #000;
+    font: normal .75rem 'Open Sans', sans-serif; }
+    @media (max-width: 990px) {
+      .form label {
+        width: auto; } }
+  .form .checkbox input[type="checkbox"] {
+    opacity: 0; }
+  .form .checkbox label {
+    position: relative;
+    display: inline-block;
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    padding-left: 35px; }
+    @media (max-width: 990px) {
+      .form .checkbox label {
+        display: block;
+        position: relative;
+        left: -13px; } }
+  .form .checkbox label::before,
+  .form .checkbox label::after {
+    position: absolute;
+    content: "";
+    /*Needed for the line-height to take effect*/
+    display: inline-block; }
+  .form .checkbox label::before {
+    height: 15px;
+    width: 15px;
+    background: #FFFF00;
+    left: 15px;
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+         *to vertically center it.
+         */
+    top: 3px; }
+  .form .checkbox label::after {
+    height: 3px;
+    width: 7px;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    left: 19px;
+    top: 8px; }
+  .form .checkbox input[type="checkbox"] + label::after {
+    content: none; }
+  .form .checkbox input[type="checkbox"]:checked + label::after {
+    content: ""; }
 
 .title-xl {
   text-transform: uppercase;
@@ -328,12 +609,14 @@ header {
 .title-sm {
   text-transform: uppercase;
   color: #FFF;
-  font: 900 1.75rem 'Open Sans', sans-serif;
+  font: 900 2rem 'Open Sans', sans-serif;
   line-height: 145.4%;
   margin-bottom: 10px; }
+  .title-sm span {
+    color: #ffff00; }
   @media (max-width: 990px) {
     .title-sm {
-      font-size: 1.4rem; } }
+      font-size: 1.5rem; } }
   @media (max-width: 576px) {
     .title-sm {
       font-size: 1.25rem; } }
@@ -369,7 +652,8 @@ header {
   display: block;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  text-align: center; }
   .btn-gold:hover {
     -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 255, 0, 0.75);
             box-shadow: 0px 0px 25px 0px rgba(255, 255, 0, 0.75); }
@@ -388,6 +672,7 @@ header {
   padding: 10px 30px;
   width: 180px;
   display: block;
+  text-align: center;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s; }

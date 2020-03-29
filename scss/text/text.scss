@@ -15,11 +15,14 @@
 .title-sm {
     text-transform: uppercase;
     color: #FFF;
-    font: 900 1.75rem 'Open Sans', sans-serif;
+    font: 900 2rem 'Open Sans', sans-serif;
     line-height: 145.4%;
     margin-bottom: 10px;
+    span {
+        color: #ffff00;
+    }
     @media (max-width: 990px) {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     @media (max-width: 576px) {
         font-size: 1.25rem;

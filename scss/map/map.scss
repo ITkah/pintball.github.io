@@ -1,0 +1,14 @@
+.map {
+    margin-bottom: -5px;
+    position: relative;
+    @media (max-width: 576px) {
+        margin: 0;
+    }
+    iframe {
+        height: 650px;
+        width: 100%;
+        @media (max-width: 576px) {
+           height: 300px;
+        }
+    }
+}
