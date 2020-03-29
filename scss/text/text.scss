@@ -12,10 +12,36 @@
     }
 }
 
+.title-sm {
+    text-transform: uppercase;
+    color: #FFF;
+    font: 900 1.75rem 'Open Sans', sans-serif;
+    line-height: 145.4%;
+    margin-bottom: 10px;
+    @media (max-width: 990px) {
+        font-size: 1.4rem;
+    }
+    @media (max-width: 576px) {
+        font-size: 1.25rem;
+    }
+    br {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
 .text-simple {
     color: #FFF;
     font: normal 1.125rem 'Open Sans', sans-serif;
     line-height: 119.9%;
+    span {
+        color: #ffff00;
+        font: bold 1.4rem 'Open Sans', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1rem;
+        }
+    }
     @media (max-width: 990px) {
         font-size: 1rem;
     }
