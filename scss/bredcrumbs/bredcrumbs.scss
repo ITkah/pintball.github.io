@@ -1,0 +1,19 @@
+.bredcrumbs {
+    position: absolute;
+    width: 100%;
+}
+.bredcrumbs-wrap {
+    padding: 10px 0;
+    a {
+        margin-right: 5px;
+        &::after {
+            content: '/';
+            position: relative;
+            left: 5px;
+        }
+    }
+    a,span {
+        font: normal .87rem 'Open Sans', sans-serif;
+        color: #FFF;
+    }
+}

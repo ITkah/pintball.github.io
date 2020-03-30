@@ -1,0 +1,38 @@
+.brend {
+    background: #373810;
+    .container {
+        padding: 40px 0;
+    }
+}
+.brend-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFF00;
+    line-height: 145%;
+    font: 900 1.5rem 'Open Sans', sans-serif;
+    margin-bottom: 40px;
+    @media(max-width: 990px) {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    br {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+}
+
+.brend-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
