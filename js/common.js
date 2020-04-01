@@ -10,6 +10,13 @@ $(document).ready(function() {
     $(this).removeClass("backdrop-active");
   });
 
+  
+  $('.single').slick({
+    arrows: true,
+    dots: true,
+    touchMove: true,
+  });
+
   $('.slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,

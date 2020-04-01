@@ -295,3 +295,120 @@
             -o-transition: 1.2s ease;
             transition: 1.2s ease; }
 }
+
+
+.clients {
+  background: #373810;
+  .clients-container {
+    position: relative;
+    &::before {
+      content: '';
+      background: #999C48;
+      border-radius: 5px;
+      display: block;
+      height: 350px;
+      width: 650px;
+      position: absolute;
+      left: -20px;
+      top: -40px;
+      @media (max-width: 990px) {
+        display: none;
+      }
+    }
+  }
+  .container {
+    padding: 60px 0;
+  }
+  .title-sm {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+  }
+  .clients-box {
+    background: url(../img/clients/clients-bg.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    margin: 0 100px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+    justify-content: center;
+    text-align: center;
+    @media (max-width: 990px) {
+     margin: 0 20px;
+    }
+    @media(max-width: 576px) {
+      padding: 15px;
+
+    }
+    img {
+      height: 160px;
+      width: 160px;
+      object-fit: cover;
+      max-width: 100%;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      @media(max-width: 576px) {
+       height: 100px;
+       width: 100px;
+      }
+    }
+    .name-clients {
+      color: #000;
+      font: bold 1.2rem 'Open Sans', sans-serif;
+      margin-bottom: 15px;
+    }
+    .text-simple {
+      font: normal 1rem 'Open Sans', sans-serif;
+      color: #000;
+      margin-bottom: 15px;
+      @media(max-width: 576px) {
+          font-size: .87rem;
+      }
+    }
+    .date {
+      font: normal 1rem 'Open Sans', sans-serif;
+      color: #727272;
+    }
+  }
+  .slick-dots li button:before {
+    color: #999C48;
+    font-size: 60px;
+    content: '';
+    height: 3px;
+    width: 50px;
+    background: #999C48;
+    display: block;
+  }
+  .slick-dots {
+      bottom: -60px;
+      @media (max-width: 576px) {
+          left: -20px;
+      }
+  }
+  .slick-dots li {
+      margin: 0 20px;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-size: 60px;
+    opacity: 1;
+    font-weight: bold;
+    color: #999C48;
+    @media (max-width: 990px) {
+      display: none;
+    }
+  }
+  .slick-prev:before {
+    color: #373810;
+    @media (max-width: 990px) {
+      color: #999C48;
+    }
+  }
+  .slick-prev {
+    left: -10px;
+  }
+  .slick-next {
+    right: 30px;
+  }
+}

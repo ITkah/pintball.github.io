@@ -1,0 +1,40 @@
+.organization {
+    background: url(../img/organiz/organiz.png) no-repeat center center;
+    background-size: cover;
+    .container {
+        padding: 80px 0;
+        @media (max-width: 990px) {
+            padding: 60px 0;
+        }
+    }
+    .title-sm{
+        text-align: center;
+        display: block;
+        margin-bottom: 60px;
+    }
+    .btn-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            width: auto;
+        }
+    }
+    .organization-box {
+        cursor: pointer;
+        &:hover {
+            p {
+                color: #FFFF00;
+            }
+        }
+        p {
+            font: 500 1rem 'Open Sans', sans-serif;
+            color: #fff;
+            transition: .3s;
+        }
+    }
+}
+
+.organization-container {
+    margin-bottom: 60px;
+}
