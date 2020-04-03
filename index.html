@@ -48,7 +48,7 @@
                                 <a href="#">Контакты</a>
                             </li>
                         </ul>
-                        <a href="#" class="btn-call">Заказать звонок</a>
+                        <a href="#form-f" class="btn-call popup-with-form">Заказать звонок</a>
                     </nav>
                     <img src="img/icon/menu.svg" class="call-menu" alt="menu">
                 </div>
@@ -237,22 +237,17 @@
     </div>
 
 
-    <div id="test-form" class="mfp-hide white-popup-block">
-        <p class="modal-title">Форма заявки</p>
-        <p class="modal-text text-light">Оставьте свои контакты и мы с вами свяжемся<br> для уточнения деталей</p>
-        <form method="POST">
-            <div class="input-box">
-                <input type="text" name="nameUser" placeholder="Имя" min="2" max="15" required>
+    <div id="form-f" class="mfp-hide white-popup-block form-fed">
+        <p class="title-sm">Заказать звонок</p>
+        <p class="text-simple">Отправьте ваши данные и наши менеджеры с вами свяжутся в ближайшее время</p>
+        <form class="form">
+            <input type="text" placeholder="Введите имя" class="simple-input">
+            <input type="text" placeholder="Введите имя"  class="simple-input">
+            <button type="submit" class="btn-gold">Оставить заявку</button>
+            <div class="checkbox">
+                <input type="checkbox" class="check" id="checkbox_1" required>
+                <label for="checkbox_1">Нажимая кнопку «Отправить заявку», вы даете согласие на обработку своих персональных данных</label>
             </div>
-            <div class="input-box">
-                <input type="text" name="phoneUser" placeholder="Телефон" min="8" max="25" required>
-            </div>
-            <div class="btn-wrap">
-                <button type="submit">Отправить заявку</button>
-            </div>
-            <p class="politica-form">
-                Нажимая кнопку, я принимаю <a href="#">политику<br> конфиденциальности</a> и соглашаюсь<br> с обработкой персональных данных.
-            </p>
         </form>
     </div>
 
