@@ -15,10 +15,16 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  @media (max-width: 1150px) {
+    .header-container {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   @media (max-width: 990px) {
     .header-container {
       padding: 10px 0;
@@ -36,6 +42,9 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    @media (max-width: 1150px) {
+      .header-container .logo-box img {
+        height: 20px; } }
   .header-container nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -75,6 +84,9 @@ header {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin-right: 15px; }
+      @media (max-width: 1150px) {
+        .header-container nav ul {
+          margin-right: 5px; } }
       @media (max-width: 990px) {
         .header-container nav ul {
           padding: 10px 15px;
@@ -101,8 +113,8 @@ header {
           color: #e0e0e0; }
         @media (max-width: 1150px) {
           .header-container nav ul li a {
-            padding: 10px 5px;
-            font-size: .9rem; } }
+            padding: 10px 8px;
+            font-size: .87rem; } }
         @media (max-width: 990px) {
           .header-container nav ul li a {
             font-size: 1rem;
@@ -117,6 +129,10 @@ header {
           position: absolute;
           right: 0;
           top: 16px; }
+          @media (max-width: 1150px) {
+            .header-container nav ul li:nth-child(1)::after {
+              top: 10px;
+              right: -3px; } }
           @media (max-width: 990px) {
             .header-container nav ul li:nth-child(1)::after {
               right: -20px;
@@ -1056,6 +1072,9 @@ header {
     max-width: 100%;
     height: auto; }
 
+.clients .clients-box img {
+  display: block !important; }
+
 .slider-second {
   background: #373810; }
   .slider-second .title-sm {
@@ -1665,7 +1684,7 @@ footer {
   background: #373810; }
 
 .footer-container {
-  padding: 25px 0;
+  padding: 50px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 40px; }
@@ -1770,7 +1789,7 @@ footer {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
-  margin-top: 15px; }
+  margin-top: 0; }
   @media (max-width: 990px) {
     .footer-link-box .btn-call {
       -webkit-box-sizing: border-box;
