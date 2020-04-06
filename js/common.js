@@ -1,9 +1,12 @@
 $(document).ready(function() {
 
-  $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
-    $(this)
-      .addClass('active').siblings().removeClass('active')
-      .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  $(".tabs__caption").on("click","a", function (event) {
+    event.preventDefault();
+    $(".tabs__caption a").removeClass("active");
+    $(this).addClass("active");
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top - 100;
+    $('body,html').animate({scrollTop: top}, 1500);
   });
 
   $('.popup-with-form').magnificPopup({
@@ -36,26 +39,6 @@ $(document).ready(function() {
   });
 
   
-  $('.single').slick({
-    arrows: true,
-    dots: true,
-    touchMove: true,
-  });
-
-  $('.slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: true,
-    centerMode: true,
-    variableWidth: true,
-    infinite: true,
-    focusOnSelect: true,
-    cssEase: 'linear',
-    touchMove: true,
-    prevArrow: '<button class="slick-prev">  </button>',
-    nextArrow: '<button class="slick-next">  </button>',
-});
 
 var imgs = $('.slider img');
 imgs.each(function () {
@@ -229,4 +212,26 @@ function init(elem, options){
     });
     
   });
+
+  $('.single').slick({
+    arrows: true,
+    dots: true,
+    touchMove: true,
+  });
+
+    $('.slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      centerMode: true,
+      variableWidth: true,
+      infinite: true,
+      focusOnSelect: true,
+      cssEase: 'linear',
+      touchMove: true,
+      prevArrow: '<button class="slick-prev">  </button>',
+      nextArrow: '<button class="slick-next">  </button>',
+  });
+  
 });

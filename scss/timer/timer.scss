@@ -7,6 +7,12 @@
             padding: 50px 0;
         }
     }
+    .btn-gold {
+        width: 200px;
+        @media (max-width: 990px) {
+            width: 100%;
+        }
+    }
     .timer-container {
         max-width: 500px;
         .text-simple {

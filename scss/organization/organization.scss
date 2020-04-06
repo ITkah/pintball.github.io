@@ -22,7 +22,17 @@
     }
     .organization-box {
         cursor: pointer;
+        position: relative;
+        .active-img {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            transition: .3s;
+        }
         &:hover {
+            .active-img {
+                opacity: 1;
+            }
             p {
                 color: #FFFF00;
             }
@@ -77,7 +87,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     img {
         margin-bottom: 25px;
     }
